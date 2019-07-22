@@ -34,7 +34,9 @@
       </div>
     </div>
     <div class="py-2">
-      <button class="btn btn-block btn-primary" @click="exportFile">Download excel</button>
+      <button class="btn btn-block btn-primary" @click="exportFile" :disabled="!loaded">
+        {{ (loaded) ? 'Download excel' : 'Loading...' }}
+      </button>
     </div>
   </div>
 </body>

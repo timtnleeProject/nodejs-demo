@@ -5,7 +5,8 @@ const exportExelComponent = new Vue({
     inputs: ['', '', ''],
     data: [
       { name: 'N1', col1: 'V1', col2: 'V2' }
-    ]
+    ],
+    loaded: true
   },
   methods: {
     add () {
@@ -26,6 +27,7 @@ const exportExelComponent = new Vue({
       // window.open(url, '_blank')
       // Method 2
       const url = '/export/excel'
+      this.loaded = false
       fetch(url, {
         method: 'POST',
         headers: {
@@ -49,6 +51,9 @@ const exportExelComponent = new Vue({
         })
         .catch(e => {
           console.log(e.message)
+        })
+        .finally(() => {
+          this.loaded = true
         })
     }
   }
