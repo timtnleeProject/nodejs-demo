@@ -1,4 +1,4 @@
-# prototype
+# excel-export-on-browser
 
 * Excel export & download on browser
 
