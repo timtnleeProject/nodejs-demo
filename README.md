@@ -1,6 +1,6 @@
 # prototype
 
-* Excel 匯出下載
+* Excel export & download on browser
 
 ## 說明
 
@@ -16,4 +16,4 @@ npm install
 npm run dev
 ```
 
-web page on `localhost:3000`
+demo page on `localhost:3000`

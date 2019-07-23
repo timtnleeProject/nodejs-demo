@@ -21,7 +21,7 @@ const exportExelComponent = new Vue({
       this.data.splice(i, 1)
     },
     exportFile () {
-      // Method 1
+      // Method 1 (Not good)
       // const data = encodeURI(JSON.stringify(this.data))
       // const url = `/export/excel?data=${data}`
       // window.open(url, '_blank')
